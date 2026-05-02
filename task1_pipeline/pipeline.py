@@ -15,10 +15,10 @@ df.drop_duplicates(inplace=True)
 # ---------------------------
 # Handle Missing Values
 # ---------------------------
-df['director'].fillna('Unknown', inplace=True)
-df['cast'].fillna('Unknown', inplace=True)
-df['country'].fillna('Unknown', inplace=True)
-df['rating'].fillna('Not Rated', inplace=True)
+df['director'] = df['director'].fillna('Unknown')
+df['cast'] = df['cast'].fillna('Unknown')
+df['country'] = df['country'].fillna('Unknown')
+df['rating'] = df['rating'].fillna('Not Rated')
 
 # ---------------------------
 # Date Processing
